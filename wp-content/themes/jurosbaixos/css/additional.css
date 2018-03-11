@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 0.9rem;
+}
+
+a,
+a:visited {
+    color: #811F4B;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #4C0C3D;
+    text-decoration: none;
+}
+
+.site-header {
+    padding: 0 2rem;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #F7F7F7;
+    text-align: center;
+}
+
+.site-content {
+    margin: 0 2rem;
+}
+
+.site-footer {
+    margin: 0 2rem 1rem;
+    padding: 2rem 1rem 1rem;
+    border-top: 1px solid #EEE;
+}
+
+.entry-footer span,
+.site-info a {
+    margin: 0.25rem 0.5rem;
+}
+
+.site-info {
+    text-align: right;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    font-size: 0.8rem;
+    min-width: 177px;
+    vertical-align: middle;
+    position: relative;
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    line-height: 1.25;
+    background-color: #D61C6E;
+    color: #FFF;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.125);
+}
+
+.table thead span {
+    display: block;
+    text-align: left;
+    width: calc(100% - 60px);
+}
+
+.table thead .help-span {
+    cursor: help;
+}
+
+.table thead .help {
+    padding: 0px 3px;
+    display: inline;
+    margin-left: 4px;
+    font-size: small;
+    line-height: 1;
+    border-radius: 900px;
+    background-color: rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.table thead .filter {
+    right: 0;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    width: 45px;
+    cursor: pointer;
+    background: url('../img/sort.svg') center center no-repeat scroll transparent;
+    background-size: 33.333%;
+}
+
+.table thead .filter:hover,
+.table thead .filter:focus,
+.table thead .filter:active {
+    background-color: rgba(0,0,0,0.075);
+}
+
+.table thead .asc .filter {
+    background-image: url('../img/sort-asc.svg');
+    background-size: 27.5%;
+}
+
+.table thead .desc .filter {
+    background-image: url('../img/sort-desc.svg');
+    background-size: 27.5%;
+}
+
+.table tbody td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #EEE;
+}
+
+.table tbody tr:first-child td {
+    border-top: 0 none;
+}
+
+.table tbody td:nth-child(2n) {
+    background-color: #F7F7F7;
+    border-top-color: #E7E7E7;
+}
