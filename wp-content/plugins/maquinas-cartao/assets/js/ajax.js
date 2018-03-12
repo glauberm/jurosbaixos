@@ -1,12 +1,7 @@
 var data = {};
 
 jQuery( document ).ready( function() {
-
     data["action"] = "get_results";
-
-    // data["order"] = {};
-    // data["order"]["marca"] = "desc";
-    // data["order"]["modelo"] = "desc";
 
     ajaxPost( data );
 });
@@ -17,8 +12,6 @@ function ajaxPost( data ) {
         url: ajax_object.ajaxurl,
         data: data,
         success: function( response ) {
-            // console.log(response); return;
-
             // Cria o objeto
             var objs = jQuery.parseJSON(response);
 

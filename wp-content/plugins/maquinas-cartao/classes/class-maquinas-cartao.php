@@ -49,6 +49,7 @@ class Maquinas_Cartao
 
         $query = 'SELECT '. implode($columnNames, ', ') .' FROM Dados';
 
+        // Adiciona os filtros
         if( !empty( $_POST['order'] ) ) {
             $query .= ' ORDER BY ';
 
@@ -68,8 +69,6 @@ class Maquinas_Cartao
 
             $query .= implode($arrayOrder, ', ');
         }
-
-        // echo json_encode($query);
 
         // Pega os dados do banco
         $results = $wpdb->get_results( $query );
